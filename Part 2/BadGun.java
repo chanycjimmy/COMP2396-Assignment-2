@@ -3,8 +3,12 @@ public class BadGun extends Weapon {
         super (name, power);
     }
 
-    public int shoot () {
-        this.changePower(Math.floor (this.getPower() * 0.8)); 
+    public int shoot () {      
+        /* 
+        (int) is to tell the compiler that This tells the compiler: 
+        "Yes, I know this is a double, and I want to convert it to int."
+        */
+        this.changePower((int) Math.floor (this.getPower() * 0.8)); 
         return this.getPower();
     }
 }

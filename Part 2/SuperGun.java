@@ -13,11 +13,10 @@ public class SuperGun extends Weapon {
 
     public int shoot () {
         if (this.boosted == true) {
+            this.boosted = false;
             return this.getPower() * 2;
         }
         else {
             return this.getPower();
         }
-        this.boosted = false;
-    }
 }
