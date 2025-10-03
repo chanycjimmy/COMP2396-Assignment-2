@@ -11,7 +11,15 @@ public class Weapon {
         return this.weaponName;
     }
 
+    public int getPower () {
+        return this.power;
+    }
+    
     public int shoot () {
         return this.power;
+    }
+
+    public void changePower (int target) {
+        this.power = target;
     }
 }

@@ -24,6 +24,10 @@ public class Character {
         return this.energyLevel;
     }
 
+    public void reduceEnergyLevel (int reduction) {
+        this.energyLevel -= reduction;
+    }
+
     public int hurt (int attackAmount) {
         this.energyLevel -= attackAmount;
         return attackAmount;

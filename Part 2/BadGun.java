@@ -4,7 +4,7 @@ public class BadGun extends Weapon {
     }
 
     public int shoot () {
-        this.power = Math.floor (this.power * 0.8); 
-        return this.power;
+        this.changePower(Math.floor (this.getPower() * 0.8)); 
+        return this.getPower();
     }
 }
