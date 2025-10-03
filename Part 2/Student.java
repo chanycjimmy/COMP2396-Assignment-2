@@ -11,11 +11,11 @@ public class Student extends Character {
         this.hidden = true;
     }
 
-    public hurt (int attackAmount) {
+    public int hurt (int attackAmount) {
         if (this.hidden == false) {
             this.energyLevel -= attackAmount;
         }
-        this.hidden == true;
+        this.hidden = true;
         
         return this.getEnergyLevel();
     }
