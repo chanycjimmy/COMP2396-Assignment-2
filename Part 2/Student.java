@@ -4,11 +4,11 @@ public class Student extends Character {
 
     public Student (String name, int energyLevel, int skillLevel) {
         super(name,energyLevel,skillLevel);
-        this.hidden = false
+        this.hidden = false;
     }
 
     public void hide () {
-        this.hidden = true
+        this.hidden = true;
     }
 
     public hurt (int attackAmount) {
