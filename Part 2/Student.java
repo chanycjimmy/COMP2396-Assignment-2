@@ -12,12 +12,14 @@ public class Student extends Character {
     }
 
     public int hurt (int attackAmount) {
+        
         if (this.hidden == false) {
             this.reduceEnergyLevel(attackAmount);
+            return attackAmount;
         }
-        this.hidden = true;
         
-        return this.getEnergyLevel();
+        this.hidden = true;
+        return 0;
     }
 
 }
