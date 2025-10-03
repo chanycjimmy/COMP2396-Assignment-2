@@ -17,8 +17,8 @@ public class Student extends Character {
             this.reduceEnergyLevel(attackAmount);
             return attackAmount;
         }
-        
-        this.hidden = true;
+
+        this.hidden = false;
         return 0;
     }
 

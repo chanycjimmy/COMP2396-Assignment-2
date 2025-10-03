@@ -18,8 +18,4 @@ public class Weapon {
     public int shoot () {
         return this.power;
     }
-
-    public void changePower (int target) {
-        this.power = target;
-    }
 }
