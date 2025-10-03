@@ -19,4 +19,5 @@ public class SuperGun extends Weapon {
         else {
             return this.getPower();
         }
+    }
 }
