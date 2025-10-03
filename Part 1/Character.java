@@ -30,7 +30,7 @@ public class Character {
     }
 
     public int attack (Weapon w1) {
-        return this.skillLevel + w1.shoot;
+        return this.skillLevel + w1.shoot();
     }
 
     public boolean isLose () {
