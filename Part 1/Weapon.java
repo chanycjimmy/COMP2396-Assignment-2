@@ -1,0 +1,17 @@
+public Weapon {
+    private String weaponName;
+    private int power;
+
+    public Weapon (String name, int power) {
+        this.weaponName = name;
+        this.power = power;
+    }
+    
+    public String getName () {
+        return this.weaponName;
+    }
+
+    public int shoot () {
+        return this.power;
+    }
+}
